@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Task Board</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/js.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>My Task Board</h1>
+    </header>
+    <main>
+      <form action="javascript:addTask()">
+        <input
+          type="text"
+          placeholder="Please enter your task..."
+          id="task"
+          required
+        />
+        <br />
+        <input type="date" value="date" id="date" required /><br /><br />
+        <input type="time" value="time" id="time" required />
+        <br />
+        <br />
+        <br />
+        <div class="buttons">
+          <input type="submit" style="color: green" />
+          <input type="reset" style="color: red" />
+        </div>
+      </form>
+    </main>
+    <div class="notes">
+      <div id="notes"></div>
+    </div>
+    <!-- <img src="images/tile.jpg" alt="Board" class="bg" /> -->
+  </body>
+</html>
